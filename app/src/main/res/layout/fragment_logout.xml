@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.logout.LogoutFragment"
+    android:padding="40dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="108dp"
+        android:background="#bdc3c7"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="@string/logout_Str"
+            android:textSize="32dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/go_logout"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#2ecc71"
+                android:fontFamily="@font/poppinsbold"
+                android:text="確定"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/go_cancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="取消"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
